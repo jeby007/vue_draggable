@@ -1,0 +1,141 @@
+$bgColor = #03a9f4
+$shadow = 0px 0px 5px #D1D1D1
+.title
+  font-size 16px
+  color #333
+  font-weight 700
+
+  /*close btn*/
+.close
+  position absolute
+  top -8px
+  right -6px
+  color #bfbfbf
+  font-size 26px
+  cursor: pointer;
+  .iconfont
+    font-size 26px
+
+  /*Mid Item*/
+.explain
+  color #bfbfbf
+  font-size 12px
+  line-height 40px
+
+/*right add item*/
+.addItem
+  height 60px
+  display flex
+  flex-direction column
+  align-items center
+  font-size 14px
+  justify-content center
+  cursor: pointer;
+  p
+    color $bgColor
+    margin-bottom 6px
+  span
+    color #999
+    font-size 12px
+
+/*right add itemInfo*/
+  .swpItem
+    display flex
+    align-items center
+    height 100px
+    padding 0 12px
+    justify-content space-between
+    position relative
+    .close
+      /*width 20px*/
+      /*height 20px*/
+      color #bfbfbf
+      position absolute
+      font-size 26px
+      top -8px
+      right -8px
+    .leftImg
+      width 78px
+      height 78px
+      position relative
+      img
+        width 100%
+        height auto
+      .changeImg
+        width 90px
+        height 20px
+        background rgba(0,0,0,.3)
+        position absolute
+        left -6px
+        bottom -4px
+        display flex
+        align-items center
+        justify-content center
+        font-size 14px
+        color #fff
+    .rightInfo
+      .rightInfo_item
+        display flex
+        align-items center
+        font-size 16px
+        color #333
+        span
+          /*margin-right 12px*/
+          font-size 14px
+        &:first-child
+          margin-bottom 14px
+        & >>> .el-input
+          width 196px
+          .el-input__inner
+            line-height 30px
+          .el-input__suffix
+            margin-right 0
+            & .el-input__count-inner
+              font-size 10px
+.positionB
+  position absolute
+  bottom 0
+  left 0
+  height 60px
+  width 100%
+  //box-sizing content-box
+.card.item.ghost
+  border 1px solid $bgColor
+  height 80px
+  width 100%
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+
+  .iconfont
+    font-size 20px
+
+  p
+    font-size 12px
+    margin-top 10px
+
+.noData
+  display flex
+  align-items center !important
+  justify-content center !important
+  color #999
+  font-size 14px
+
+.saveing
+  .el-message__content
+    margin-left 10px
+    color #666
+.shadow
+  box-shadow 0px 0px 5px #D1D1D1
+.required
+  color red
+.hint
+  width 100%
+  text-align center
+  color #999
+  font-size 12px
+  position absolute
+  top 50%
+  left: 50%
+  transform translate(-50%,-50%)
